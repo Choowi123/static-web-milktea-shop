@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+		function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+		document.getElementById("mySidenav").style.width = "0px";
+		}
+	</script>
+    <style>
+.navigationBar {
+	height: 60%;
+	width: 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: black;
+	overflow: hidden;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	transition: 0.5s;
+}
+.navigationBar a{
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.5s;
+	text-align: left;
+}
+.navigationBar a:hover {
+	position: relative;
+	top: 0;
+	right: 25px;
+	font-size: 25px;
+	margin-left: 50px;
+	transition: 0.5s;
+	background-color: transparent;
+	color: white;
+	border-left: 2px solid white;
+	}
+#main {
+	transition: margin-left .5s;
+	padding: 20px;
+	}
+
+.button h1 {
+	color: white;
+	padding-left: 0px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    text-align: left;
+    margin-top: 1px;
+    margin-left: 2px;
+	}
+
+.button h1:hover {
+	color: white;
+	cursor: pointer;
+	}
+    h1 {
+    font-family:'Pacifico', cursive;
+    font-size: 50px;
+    padding: 10px;
+    color:white;
+    justify-self: center;
+    text-align:center;
+    border-top: 5px transparent;
+}
+p {
+    font-family:'Pacifico', cursive;
+    font-size: 15px;
+    padding: 5;
+    color:white;
+    justify-self: center;
+    text-align:center;
+}
+
+h1 {
+    font-family:'Pacifico', cursive;
+    font-size: 30px;
+    padding: 5px;
+    color:white;
+    justify-self: center;
+    text-align:center;
+}
+
+body {
+background: rgb(27, 27, 27);
+margin-left: 0;
+margin-right: 0;
+margin-top: 0;
+margin-bottom: 0;
+}
+header {
+     color: white;
+     background-color: black;
+     padding: 5px;
+
+    }
+    footer {
+            background-color: black;
+            padding: 12.5px;
+            color: white;
+            position:relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        .footerLinks a {
+		color: #d9d9d9;
+		text-decoration: none;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Location</title>
+</head>
+<body>
+    <header>
+        <center>
+        <img src="gallery/milk.png" alt="" style="width:19%">
+        </center>
+        <div class="button">
+            <h1><span onclick="openNav()">&#9776;</span></h1>
+        </div>
+        <div id="mySidenav" class="navigationBar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="homepage.html">HOME</a>
+            <a href="aboutus.html">ABOUT US</a>
+            <a href="location.html">LOCATION</a>
+            <a href="menu.html">MENU</a>
+            <a href="delivery.html">DELIVERY</a>
+            <a href="modeofpayment.html">MODE OF PAYMENT</a>
+        </div>
+      </header>
+    <h1>LOCATION</h1>
+    <p><br>YOU CAN LOCATE US AT: </br>
+    <br>Blk40g Lot30 Maya-maya St. Brgy. Longos, Malabon City</br></p>
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d965.01604904685!2d120.95835142915529!3d14.65229729685112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b5b478b8d925%3A0xd457c7d6710825d6!2s30%20Maya-Maya%20St%2C%20Longos%2C%20Malabon%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1616417672520!5m2!1sen!2sph" width="1500" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+    <footer>
+        <center>
+            <div class="footerLinks">
+                <ul>
+                    <a href="developers.html">Developers Page</a>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>© 2021 Zubohti. All rights reserved.</p>
+            </div>
+    </center>
+    </footer>
+</body>
+</html>

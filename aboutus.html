@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+		function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+		}
+		function closeNav() {
+		document.getElementById("mySidenav").style.width = "0px";
+		}
+	</script>
+    <style>
+        header {
+        background-color: black;
+        padding: 5px;
+        }
+        footer {
+            background-color: black;
+            padding: 12.5px;
+            color: white;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        .footerLinks a {
+		color: #d9d9d9;
+		text-decoration: none;
+        text-align: left;
+        position: left;
+}
+    .navigationBar {
+	height: 60%;
+	width: 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: black;
+	overflow: hidden;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	transition: 0.5s;
+}
+
+.navigationBar a{
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.5s;
+	text-align: left;
+}
+
+.navigationBar a:hover {
+	position: relative;
+	top: 0;
+	right: 25px;
+	font-size: 25px;
+	margin-left: 50px;
+	transition: 0.5s;
+	background-color: transparent;
+	color: white;
+	border-left: 2px solid white;
+	}
+
+#main {
+	transition: margin-left .5s;
+	padding: 20px;
+	}
+
+.button h1 {
+	color: white;
+	padding-left: 0px;
+	position: absolute;
+    top: 5px;
+    left: 5px;
+    text-align: left;
+    margin-top: 1px;
+    margin-left: 2px;
+	}
+
+.button h1:hover {
+	color: white;
+	cursor: pointer;
+	}
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Century Gothic;
+            background:url(gallery/mt.jpg)no-repeat;
+        }
+        .container {
+            height: 45vh;
+            width: 50%;
+            background: rgba(0, 0, 0, .6);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 0, 20px;
+        }
+
+        .img {
+            height: 70px;
+            width: 70px;
+            background:url(gallery/pic.jpg)no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50px;
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .container h1{
+            color: white;
+            margin-top: 40px;
+        }
+        .container p {
+            color: white;
+            margin-top: 0px;
+            font-size: large;
+            font-weight: 900;
+        }
+        .btn {
+            background: no-repeat;
+            outline: none;
+            border: 1px solid rgb(12, 11, 11);
+            color:white;
+            width: 50%;
+            padding: 7px, 15px;
+            font-size: large;
+            cursor: pointer;
+            transition: 0.3s ease;
+            margin-top: 15px;
+            font-weight: 800;
+        }
+        .btn:hover {
+            background: white;
+            color: black;
+        }
+
+       
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+<body>
+    <header>
+        <center>
+        <img src="gallery/milk.png" alt="ico" style="width:19%">
+        </center>
+        <div class="button">
+            <h1><span onclick="openNav()">&#9776;</span></h1>
+        </div>
+        <div id="mySidenav" class="navigationBar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="homepage.html">HOME</a>
+            <a href="aboutus.html">ABOUT US</a>
+            <a href="location.html">LOCATION</a>
+            <a href="menu.html">MENU</a>
+            <a href="delivery.html">DELIVERY</a>
+            <a href="modeofpayment.html">MODE OF PAYMENT</a>
+        </div>
+      </header>
+    <div class="container">
+        <center>
+            <h1>ABOUT US</h1>
+            <div class="img"></div>
+            <p>
+                Before the pandemic, Peter Polillo (Owner) was a filmmaker/Video editor. 
+                Money is not hard for their family, all of their payments and bills are easily paid because of his job. 
+                They even buy their car, but because of the pandemic, the car was foreclosed. 
+                Also, some of Peter's things in shoot and editing have been sold because both of them have no work.
+                His co-worker in video editing tells the kindness story of Peter in charity. 
+                Because of that the owner of the charity instantly gave him 30,000 cash and Peter built their Milk tea house. 
+                Now, they have 6 branches, 4 franchises and the rest is history.
+            </p>
+            <a href="https://www.youtube.com/watch?v=CGX_U1V5um4">
+            <button class="btn">Know More</button>
+            </a>
+        </center>
+    </div>
+    <footer>
+        <center>
+            <div class="footerLinks">
+                <ul>
+                    <a href="developers.html">Developers Page</a>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>© 2021 Zubohti. All rights reserved.</p>
+            </div>
+    </center>
+    </footer>
+    
+</body>
+</html>

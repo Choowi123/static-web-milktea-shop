@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="'https://fonts:googleapis.com/css2?family=Poppinins&display=swap" rel="stylesheet">
+		<title>Home Page</title>
+		<style>
+
+header {
+	background-color: #0d0d0d;
+	padding: 10px;
+	text-align: center;
+	font-size: 13px;
+	color: white;
+}
+			
+			h1 {
+				color: white;
+			}
+			
+			h1:hover {
+				color: white;
+				cursor: pointer;
+			}
+			
+			body {
+				height: 708px;
+				background-image: url("gallery/back.jpg");
+				background-position: center;
+				background-size: cover;
+				overflow-x: hidden;
+				position: relative;
+				cursor: default;
+			}
+
+			header {
+				background-color: #0d0d0d;
+				padding: 10px;
+				text-align: center;
+				font-size: 13px;
+				color: white;
+			}
+
+			
+			.navigationBar {
+				height: 50%;
+				width: 0;
+				position: fixed;
+				left: 0;
+				top: 0;
+				background-color: black;
+				overflow: hidden;
+				padding-top: 10px;
+				padding-bottom: 0px;
+				padding-left: 0px;
+				transition: 0.5s;
+			}
+
+			.navigationBar a{
+				padding: 8px 8px 8px 32px;
+				text-decoration: none;
+				font-size: 25px;
+				color: #818181;
+				display: block;
+				transition: 0.5s;
+				text-align: left;
+			}
+
+			.navigationBar a:hover {
+				position: relative;
+				top: 0;
+				right: 25px;
+				font-size: 25px;
+				margin-left: 50px;
+				transition: 0.5s;
+				background-color: transparent;
+				color: white;
+				border-left: 2px solid white;
+			}
+
+			#main {
+				transition: margin-left .5s;
+				padding: 20px;
+			}
+
+			.button h1 {
+				color: white;
+				padding-left: 0px;
+				position:absolute;
+				top:5px;
+				left:5px;
+				text-align: left;
+				margin-top:1px;
+				margin-left: 2px;
+			}
+
+			.button h1:hover {
+				color: white;
+				cursor: pointer;
+			}
+
+			footer {
+				background-color: black;
+				padding: 12.5px;
+				color: white;
+				right: 0px;
+				left: 0px;
+				bottom: 0px;
+				width: 100%;
+				text-align: center;
+			}
+			
+			.footerLinks a {
+				color: #d9d9d9;
+				text-decoration:none;
+				font-size:13px;
+			}
+			
+			* {
+				box-sizing: border-box;
+			}
+			
+			.litrato {
+				float: left;
+				width: 440px;
+				height: 400px;
+				padding: 2px;
+				border: 5px solid rgba(255, 255, 255, 0.664);
+				background: black;
+				padding: 5px;
+			}
+			
+			.imahe::after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+		</style>
+		
+		<script>
+			function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+			}
+
+			function closeNav() {
+			document.getElementById("mySidenav").style.width = "0px";
+			}
+		</script>
+	</head>
+	<header>
+		<div class="button">
+			<h1><span onclick="openNav()">&#9776;</span></h1>
+		</div>
+		<div id="mySidenav" class="navigationBar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="aboutus.html">ABOUT US</a>
+			<a href="location.html">LOCATION</a>
+			<a href="menu.html">MENU</a>
+			<a href="delivery.html">DELIVERY</a>
+			<a href="modeofpayment.html">MODE OF PAYMENT</a>
+	</div>
+		<img src="gallery/ICO.png" alt="ico" style="width:19%">
+	</header>
+	<body>
+		<br>
+		<br>
+		<div class="imahe">
+			<div class="litrato">
+				<img src="gallery/4.jpg" width="420px" height="380px">
+			</div>
+			<div class="litrato">
+				<img src="gallery/6.jpg" width="420px" height="380px">
+			</div>
+			<div class="litrato">
+				<img src="gallery/1.jpg" width="420px" height="380px">
+			</div>
+			<div class="litrato">
+				<img src="gallery/5.jpg" width="420px" height="380px">
+			</div>
+			<div class="litrato">
+				<img src="gallery/2.jpg" width="420px" height="380px">
+			</div>
+			<div class="litrato">
+				<img src="gallery/3.jpg" width="420px" height="380px">
+			</div>
+		</div>
+	</body>
+	<footer>
+		<div class="footerLinks">
+			<ul>
+				<a href="developers.html">Developers Page</a>
+			</ul>
+		</div>
+		<div class="copyright">
+			<p>&copy 2021 Zubohti. All rights reserved</p>
+		</div>
+		</div>
+	</footer>
+</html>
